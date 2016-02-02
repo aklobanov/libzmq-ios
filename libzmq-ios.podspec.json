@@ -23,7 +23,7 @@
     "src/*.{h,hpp,c,cc,cpp}",
     "include/*.h"
   ],
-  "dependency":"libsodium-ios",
+  "dependency": "libsodium-ios",
   "public_header_files": "include/*.h",
   "libraries": "stdc++",
   "requires_arc": false,
