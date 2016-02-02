@@ -22,8 +22,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
   s.requires_arc = false
-  s.source_files = [ "src/*.{h,hpp,c,cc,cpp}", "include/*.h" ],
-  s.public_header_files = "include/*.h",
-  s.libraries = "stdc++",
+  s.source_files = [ 'src/*.{h,hpp,c,cc,cpp}', 'include/*.h' ]
+  s.public_header_files = 'include/*.h'
+  s.libraries = 'stdc++'
   s.prepare_command = "        (\n            ./autogen.sh\n            ./configure --prefix=$PWD\n        ) | tee \"/tmp/$(basename $0).$$.tmp\"\n"
 end
